@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventrue</title>
+</head>
+<body>
+	
+	<script type="text/javascript" src="book/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="book/wow_book.min.js"></script>
+<link rel="stylesheet" href="book/wow_book.css" type="text/css" />
+<div class="flechas"><a id="cl" href="#"><img  class="ctrll" src="images/le.png"><a id="cr" href="#"><img class="ctrlr" src="images/ri.png"></a></div>
+
+<div id="mybook">
+  <div><img src="bookago2013/portada.jpg?2"></div>
+  <div><img src="bookago2013/1.jpg?2"></div>
+  <div><img src="bookago2013/2.jpg?2"></div>
+  <div><img src="bookago2013/3.jpg?2"></div>
+  <div><img src="bookago2013/4.jpg?2"></div>
+  <div><img src="bookago2013/5.jpg?2"></div>
+  <div><img src="bookago2013/6.jpg?2"></div>
+  <div><img src="bookago2013/7.jpg?2"></div>
+  <div><img src="bookago2013/8.jpg?2"></div>
+  <div><img src="bookago2013/9.jpg?2"></div>
+  <div><img src="bookago2013/10.jpg?2"></div>
+  <div><img src="bookago2013/11.jpg?2"></div>
+  <div><img src="bookago2013/12.jpg?2"></div>
+  <div><img src="bookago2013/13.jpg?2"></div>
+  <div><img src="bookago2013/14.jpg?2"></div>
+  <div><img src="bookago2013/15.jpg?2"></div>
+  <div><img src="bookago2013/16.jpg?2"></div>
+  <div><img src="bookago2013/17.jpg?2"></div>
+  <div><img src="bookago2013/18.jpg?2"></div>
+  <div><img src="bookago2013/19.jpg?2"></div>
+  <div><img src="bookago2013/20.jpg?2"></div>
+  <div><img src="bookago2013/21.jpg?2"></div>
+  <div><img src="bookago2013/22.jpg?2"></div>
+  <div><img src="bookago2013/23.jpg?2"></div>
+  <div><img src="bookago2013/24.jpg?2"></div>
+  <div><img src="bookago2013/25.jpg?2"></div>
+  <div><img src="bookago2013/26.jpg?2"></div>
+  <div><img src="bookago2013/27.jpg?2"></div>
+  <div><img src="bookago2013/28.jpg?2"></div>
+  <div><img src="bookago2013/29.jpg?2"></div>
+  <div><img src="bookago2013/30.jpg?2"></div>
+  <div><img src="bookago2013/31.jpg?2"></div>
+  <div><img src="bookago2013/32.jpg?2"></div>
+  <div><img src="bookago2013/33.jpg?2"></div>
+  <div><img src="bookago2013/34.jpg?2"></div>
+  <div><img src="bookago2013/35.jpg?2"></div>
+  <div><img src="bookago2013/36.jpg?2"></div>
+  <div><img src="bookago2013/37.jpg?2"></div>
+  <div><img src="bookago2013/38.jpg?2"></div>
+  <div><img src="bookago2013/39.jpg?2"></div>
+  <div><img src="bookago2013/40.jpg?2"></div>
+  <div><img src="bookago2013/41.jpg?2"></div>
+  <div><img src="bookago2013/42.jpg?2"></div>
+  <div><img src="bookago2013/43.jpg?2"></div>
+  <div><img src="bookago2013/44.jpg?2"></div>
+  <div><img src="bookago2013/45.jpg?2"></div>
+  <div><img src="bookago2013/46.jpg?2"></div>
+  <div><img src="bookago2013/47.jpg?2"></div>
+  <div><img src="bookago2013/48.jpg?2"></div>
+  <div><img src="bookago2013/49.jpg?2"></div>
+  <div><img src="bookago2013/50.jpg?2"></div>
+  <div><img src="bookago2013/contraportada.jpg?2"></div>
+  
+
+
+</div>
+<div class="thumbs"></div>
+<script type="text/javascript">
+
+(function ($) {
+$(document).ready(function() {
+    $('#mybook').wowBook({
+      height :484,
+      width  : 690,
+pageNumbers : false,
+ thumbnails : true, // we can omit that because 'true' is the default value to this option
+thumbnailsParent: ".thumbs",
+thumbnailsVertical: false,
+thumbnailsContainerWidth: "690px",
+  controls : {
+    // the element "thumb_button" now show/hide the thumbnails when is clicked
+    thumbs : "#thumb_button",
+    next      : '#cr',
+    back      : '#cl'
+  }
+    });
+
+var book = $.wowBook("#mybook");
+//book.showThumbnails();
+
+
+
+  });
+})(jQuery);
+
+</script>
+
+	
+</body>
+</html>
